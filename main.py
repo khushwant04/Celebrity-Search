@@ -48,9 +48,9 @@ parent_chain = SequentialChain(chains=[chain,chain2,chain3],input_variables=['na
 if input_text:
     st.write(parent_chain({'name':input_text}))
     
-    with st.expander('Person Nmae'):
+    with st.expander('Person Name'):
         st.info(person_memory.buffer)
         
     with st.expander('Major Events'):
-        st.info(descr_memory)    
+        st.info(descr_memory.buffer)    
     
